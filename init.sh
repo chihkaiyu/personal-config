@@ -1,13 +1,15 @@
 #!/bin/bash
+set -ex
 
-# install zsh and oh-my-zsh
+# install zsh
 sudo apt-get install -y zsh
-chsh -s $(which zsh)
+
+# install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # copy config
 cp ./terminal/tmux.conf ~/.tmux.conf
-cp ./termianl/zshrc ~/.zshrc
+cp ./terminal/zshrc ~/.zshrc
 cp ./terminal/vimrc ~/.vimrc
 
 # add git alias
