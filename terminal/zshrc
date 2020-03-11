@@ -52,11 +52,10 @@ ZSH_THEME="ys"
 plugins=(git)
 
 # User configuration
-
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export TERM="xterm-256color"
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
