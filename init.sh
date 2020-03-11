@@ -4,12 +4,16 @@ set -ex
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# install zsh and change default shell
+# install zsh tmux
 brew install zsh
 chsh -s /bin/zsh
 
 # install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+brew install tmux
+brew install autojump
+brew install tig
 
 # copy config
 cp ./terminal/tmux.conf ~/.tmux.conf
