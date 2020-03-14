@@ -55,7 +55,7 @@ plugins=(git)
 export GOPATH=$HOME/go
 export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
-export TERM="xterm-256color"
+export TERM="screen-256color"
 source $ZSH/oh-my-zsh.sh
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
