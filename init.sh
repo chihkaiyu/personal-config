@@ -38,10 +38,10 @@ ln -s ~/.local/venvs/pipenv/bin/pipenv ~/.local/bin
 pipenv --version
 
 git clone git://github.com/pyenv/pyenv.git ~/Documents/pyenv
-sh ~/Documents/pyenv/plugins/python-build/install.sh
+sudo sh ~/Documents/pyenv/plugins/python-build/install.sh
 
 python-build 2.7.17 ~/.local/pythons/2.7
-ln -s ~/.local/pythons/2.7/python2.7 ~/.local/bin
+ln -s ~/.local/pythons/2.7/bin/python2.7 ~/.local/bin
 
 python-build 3.7.7 ~/.local/pythons/3.7
-ln -s ~/.local/pythons/3.7/python3.7 ~/.local/bin
+ln -s ~/.local/pythons/3.7/bin/python3.7 ~/.local/bin
