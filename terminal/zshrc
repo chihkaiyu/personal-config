@@ -52,11 +52,13 @@ ZSH_THEME="ys"
 plugins=(git)
 
 # User configuration
-export GOPATH=$HOME/go
-export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
+if [[ -z $TMUX ]]; then
+    export GOPATH=$HOME/go
+    export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
+fi
 export TERM="screen-256color"
 source $ZSH/oh-my-zsh.sh
+unsetopt PROMPT_SP
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
