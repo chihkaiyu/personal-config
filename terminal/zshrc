@@ -62,9 +62,11 @@ source $ZSH/oh-my-zsh.sh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # ibus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+if [ "$(uname 2> /dev/null)" == "Linux" ]; then
+    export GTK_IM_MODULE=ibus
+    export XMODIFIERS=@im=ibus
+    export QT_IM_MODULE=ibus
+fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,4 +92,6 @@ export QT_IM_MODULE=ibus
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll="ls -al"
+function clean_dc {
+    docker rm -f $(docker ps -aq)
+}
