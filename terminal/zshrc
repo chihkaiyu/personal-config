@@ -62,7 +62,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # ibus
-if [ "$(uname 2> /dev/null)" == "Linux" ]; then
+if [ "$(uname 2> /dev/null)" = "Linux" ]; then
     export GTK_IM_MODULE=ibus
     export XMODIFIERS=@im=ibus
     export QT_IM_MODULE=ibus
