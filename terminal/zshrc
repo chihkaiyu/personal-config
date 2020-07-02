@@ -95,3 +95,5 @@ fi
 function clean_dc {
     docker rm -f $(docker ps -aq)
 }
+
+alias pes="pipenv shell"
