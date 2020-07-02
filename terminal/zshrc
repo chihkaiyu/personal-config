@@ -97,3 +97,4 @@ function clean_dc {
 }
 
 alias pes="pipenv shell"
+alias prunebr="git remote prune down | grep down | sed 's/^.*down\///g' | xargs -L1 -I % git branch -D %"
