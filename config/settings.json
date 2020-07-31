@@ -1,0 +1,44 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "vscode-icons",
+    "python.pipenvPath": "/Users/kaiyu/.local/venvs/pipenv/bin/pipenv",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.renderWhitespace": "none",
+    "gitlens.views.repositories.files.layout": "tree",
+    "editor.fontFamily": "Menlo",
+    "yaml.format.enable": true,
+    "yaml.validate": true,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "explorer.confirmDragAndDrop": false,
+    "remote.SSH.configFile": "/Users/kaiyu/.ssh/config",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+        // Optional: Disable snippets, as they conflict with completion ranking.
+        "editor.snippetSuggestions": "none",
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+    },
+    "gopls": {
+        // Add parameter placeholders when completing a function.
+        "usePlaceholders": true,
+
+        // If true, enable additional analyses with staticcheck.
+        // Warning: This will significantly increase memory usage.
+        "staticcheck": false,
+    }
+}
