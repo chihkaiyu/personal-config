@@ -11,9 +11,8 @@ chsh -s /bin/zsh
 # install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-brew install tmux
-brew install autojump
-brew install tig
+brew install tmux autojump tig exa
+git clone git@github.com:DarrinTisdale/zsh-aliases-exa.git ~/.oh-my-zsh/custom/plugins/zsh-aliases-exa
 
 # copy config
 cp ./terminal/tmux.conf ~/.tmux.conf
