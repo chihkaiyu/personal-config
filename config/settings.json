@@ -4,7 +4,7 @@
     "workbench.iconTheme": "vscode-icons",
     "python.pipenvPath": "/Users/kaiyu/.local/venvs/pipenv/bin/pipenv",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "gitlens.views.repositories.files.layout": "tree",
     "editor.fontFamily": "Menlo",
     "yaml.format.enable": true,
@@ -16,8 +16,10 @@
     "explorer.confirmDragAndDrop": false,
     "remote.SSH.configFile": "/Users/kaiyu/.ssh/config",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.suggestSelection": "first",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "go.formatTool": "goimports",
+    "go.lintTool": "golangci-lint",
     "go.useLanguageServer": true,
     "[go]": {
         "editor.formatOnSave": true,
@@ -26,6 +28,7 @@
         },
         // Optional: Disable snippets, as they conflict with completion ranking.
         "editor.snippetSuggestions": "none",
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
     },
     "[go.mod]": {
         "editor.formatOnSave": true,
@@ -35,10 +38,13 @@
     },
     "gopls": {
         // Add parameter placeholders when completing a function.
-        "usePlaceholders": true,
+        "usePlaceholders": false,
 
         // If true, enable additional analyses with staticcheck.
         // Warning: This will significantly increase memory usage.
         "staticcheck": false,
-    }
+        "analyses": {
+            "simplifycompositelit": false, 
+        }
+    },
 }
