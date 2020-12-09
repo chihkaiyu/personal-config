@@ -15,6 +15,8 @@ brew install tmux autojump tig exa
 git clone git@github.com:DarrinTisdale/zsh-aliases-exa.git ~/.oh-my-zsh/custom/plugins/zsh-aliases-exa
 
 # copy config
+mkdir -p ~/.config/nvim
+cp ./terminal/init.vim ~/.config/nvim/init.vim
 cp ./terminal/tmux.conf ~/.tmux.conf
 cp ./terminal/zshrc ~/.zshrc
 cp ./terminal/vimrc ~/.vimrc
