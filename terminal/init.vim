@@ -75,8 +75,11 @@ set cmdheight=1
 set noruler
 set laststatus=0
 
+" vim-airline
 let g:airline_theme='dracula'
 let g:airline#extensions#branch#enabled=1
+
+" Golang related
 let g:go_fmt_command = "goimports"
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -93,7 +96,8 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-fugitive'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'scrooloose/nerdtree'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 let g:dracula_colorterm=0
@@ -101,3 +105,4 @@ let g:dracula_colorterm=0
 let g:dracula_italic=0
 set t_Co=256
 colorscheme dracula
+
