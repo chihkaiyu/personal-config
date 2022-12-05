@@ -1,0 +1,1 @@
+Copy all files and folder under the setting folder of Rime (MacOS: `$HOME/Library/Rime`)
