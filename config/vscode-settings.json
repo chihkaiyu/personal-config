@@ -1,0 +1,60 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "editor.renderWhitespace": "all",
+    "gitlens.views.repositories.files.layout": "tree",
+    "editor.fontFamily": "Menlo",
+    "yaml.format.enable": true,
+    "yaml.validate": true,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+    },
+    "explorer.confirmDragAndDrop": false,
+    "remote.SSH.configFile": "/Users/kaiyu/.ssh/config",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "go.lintTool": "golangci-lint",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+        // Optional: Disable snippets, as they conflict with completion ranking.
+        // "editor.snippetSuggestions": "none",
+        // "editor.suggest.snippetsPreventQuickSuggestions": false,
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+    },
+    "gopls": {
+        // Add parameter placeholders when completing a function.
+        "usePlaceholders": false,
+
+        // If true, enable additional analyses with staticcheck.
+        // Warning: This will significantly increase memory usage.
+        "staticcheck": false
+    },
+    // "workbench.editorAssociations": {
+    //     "*.ipynb": "jupyter.notebook.ipynb"
+    // },
+    "go.addTags": {
+        "options": ""
+    },
+    "editor.tabCompletion": "onlySnippets",
+    "editor.mouseWheelScrollSensitivity": 0.5,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "hardhat.telemetry": false,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "solidity.telemetry": false,
+    "workbench.startupEditor": "none",
+}
