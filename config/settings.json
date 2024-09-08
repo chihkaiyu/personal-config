@@ -57,4 +57,51 @@
     },
     "solidity.telemetry": false,
     "workbench.startupEditor": "none",
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        {
+            "before": ["leader", "z"],
+            "commands": ["workbench.action.toggleEditorWidths"]
+        },
+        {
+            "before": ["leader", "r", "n"],
+            "commands": ["editor.action.rename"]
+        }
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#BD93F9",
+    "vim.highlightedyank.duration": 300,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.easymotion": true
 }
